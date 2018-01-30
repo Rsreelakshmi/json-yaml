@@ -1,0 +1,27 @@
+{
+  "name": "json-to-yaml",
+  "version": "1.0.0",
+  "description": "POC : Read a JSON file and convert it to YAML",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "babel-node app/index.js",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register --timeout 5000"
+  },
+  "author": "srangavazzula@sapient.com",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.1.0"
+  },
+  "dependencies": {
+    "json2yaml": "^1.1.0"
+  }
+}
